@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Файлообменник</title>
+    <!-- Подключение внешнего CSS-файла -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+   
+
+    <!-- Шапка сайта -->
+    <header class="header">
+        Файлообменник
+        <!-- Блок для загрузки файлов -->
+        <div class="upload-box" onclick="document.getElementById('fileInput').click()">
+            <p>Перетащите файлы сюда или нажмите для выбора</p>
+            <input type="file" id="fileInput" style="display: none;">
+        </div>
+    </header>
+
+    <!-- Главная часть сайта -->
+    <main class="main-content">
+        <div class="search-box">
+            <input type="text" placeholder="Поиск..." class="search-input">
+            <button class="search-button">Найти</button>
+        </div>
+
+        
+
+    </main>
+
+    <div class="design-line">Красивая разделяющая линия</div>
+
+     <!-- Блок с описанием -->
+     <div class="description-box">
+        <p>Наш файлообменник позволяет легко загружать и делиться файлами. Просто перетащите файлы в указанный блок, и они будут загружены на сервер. Вы также можете воспользоваться поиском для быстрого нахождения нужного контента по названию, тегам и айди.</p>
+    </div>
+    
+    <!-- Футер сайта -->
+    <footer class="footer">
+        © 2024 Файлообменник. Все права защищены.
+    </footer>
+
+</body>
+</html>

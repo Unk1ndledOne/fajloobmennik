@@ -1,0 +1,170 @@
+:root {
+    --main-bg-gradient: linear-gradient(to bottom, #e0e0e0, #b0b0b0); /* Градиент фона */
+    --text-color: #383746; /* Основной цвет текста */
+    --header-footer-bg: hsl(249, 4%, 34%); /* Цвет фона шапки и футера */
+    --header-footer-text: #ffffff; /* Цвет текста в шапке и футере */
+    --out-line: #3d8543 ; /* Цвет линии обводки */
+    --upload-box-border: #3d8543; /* Цвет границы в upload-box */
+    --upload-box-hover-bg: #e6e6e6; /* Цвет фона при наведении на upload-box */
+    --upload-box-text: #777777; /* Цвет текста в upload-box */
+    --upload-button-bg: #4a4a4a; /* Цвет фона кнопки загрузки */
+    --upload-button-hover-bg: #6e6e6e; /* Цвет фона кнопки при наведении */
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Центрирование содержимого */
+    width: 100%;
+    background-color: var(--header-footer-bg);
+    color: var(--header-footer-text);
+    text-align: center;
+    padding: 50px 0;
+    font-size: 34px;
+    border-bottom: 3px solid var(--out-line);
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: var(--main-bg-gradient);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.side-menu {
+    width: 250px;
+    height: 100vh;
+    background-color: var(--header-footer-bg);
+    padding-top: 20px;
+    position: fixed;
+    border-right: 3px solid var(--out-line); /* Задайте цвет и толщину рамки */
+
+    left: 0; /* Закрепляет её слева */
+    top: 0; /* Закрепляет её сверху */
+}
+
+
+
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.upload-box {
+    margin-top: 40px; /* Отступ сверху для пространства между текстом и блоком загрузки */
+    width: 100%;
+    max-width: 600px;
+    height: 200px;
+    border: 2px dashed var(--upload-box-border);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.upload-box:hover {
+    background-color: var(--upload-box-hover-bg);
+}
+
+.upload-box p {
+    color: var(--upload-box-text);
+    font-size: 18px;
+}
+
+.upload-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--upload-button-bg);
+    color: var(--header-footer-text);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.upload-button:hover {
+    background-color: var(--upload-button-hover-bg);
+}
+
+.footer {
+    width: 100%;
+    background-color: var(--header-footer-bg);
+    color: var(--header-footer-text);
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin-top: auto;
+}
+
+.design-line {
+    width: 100%;
+    height: 30px;
+    background-color: var(--header-footer-bg);
+    border-bottom: 3px solid var(--out-line); /* Задайте цвет и толщину рамки */
+    
+}
+
+
+.search-box {
+    display: flex;
+    flex-direction: column; /* Изменяем направление флекс-контейнера на вертикальное */
+    align-items: center;
+}
+
+.search-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid var(--upload-box-border);
+    border-radius: 5px;
+    outline: none;
+    width: 300px;
+    margin-bottom: 10px; /* Отступ между полем ввода и кнопкой */
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: var(--upload-button-bg);
+    color: var(--header-footer-text);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100px; /* Ширина кнопки */
+    text-align: center;
+}
+
+.search-button:hover {
+    background-color: var(--upload-button-hover-bg);
+}
+
+.description-box {
+    text-align: center;
+    color: var(--upload-box-text); /* Используем менее яркий цвет для текста */
+    margin-bottom: 20px; /* Отступ снизу, чтобы разделить с поисковым блоком */
+    padding: 0 20px; /* Отступы по бокам для лучшего визуального восприятия */
+    font-size: 16px;
+    max-width: 650px; /* Задайте желаемую максимальную ширину */
+    width: 100%; /* Позволяет элементу занимать всю доступную ширину до max-width */
+    box-sizing: border-box; /* Учитывает padding в общей ширине элемента */
+    margin: 0 auto; /* Центрирует блок по горизонтали */
+    margin-top: 20px;
+}
+
+.description-box p {
+    margin: 5px 0; /* Минимальный отступ между абзацами */
+}
