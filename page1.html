@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея файлов</title>
+    <!-- Подключение внешнего CSS-файла -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header class="header-small">
+        Галерея файлов
+    </header>
+
+    <!-- Боковая шторка поиска -->
+    <aside class="side-menu">
+        <div class="search-box">
+            <input type="text" placeholder="Поиск файлов..." class="search-input">
+        </div>
+    </aside>
+
+    <!-- Галерея файлов -->
+    <main class="main-gallery">
+        <div class="file-gallery">
+            <!-- Файлы с изображением noimage.jpg -->
+            <div class="file-item">
+                <img src="img/noimage.jpg" alt="No Image" class="file-image" onclick="openModal('img/noimage.jpg')">
+                <p>Файл 1</p>
+            </div>
+            <div class="file-item">
+                <img src="img/noimage.jpg" alt="No Image" class="file-image" onclick="openModal('img/noimage.jpg')">
+                <p>Файл 2</p>
+            </div>
+            <div class="file-item">
+                <img src="img/noimage.jpg" alt="No Image" class="file-image" onclick="openModal('img/noimage.jpg')">
+                <p>Файл 3</p>
+            </div>
+            <div class="file-item">
+                <img src="img/noimage.jpg" alt="No Image" class="file-image" onclick="openModal('img/noimage.jpg')">
+                <p>Файл 4</p>
+            </div>
+            <!-- Добавьте больше файлов при необходимости -->
+        </div>
+    </main>
+
+    <!-- Модальное окно для показа изображений -->
+<div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+</div>
+
+
+    <footer class="footer">
+        © 2024 Файлообменник. Все права защищены.
+    </footer>
+
+    <!-- Подключение JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
